@@ -1,0 +1,36 @@
+[gd_scene load_steps=3 format=3 uid="uid://6d4typq5jl2x"]
+
+[ext_resource type="Script" uid="uid://dn4f3fyvmqde5" path="res://mechanic/items/widgets/value_widget.gd" id="1_5rjdb"]
+[ext_resource type="PackedScene" uid="uid://bpavmr6ls3mdv" path="res://mechanic/items/widgets/widget_preview.tscn" id="2_pfxlj"]
+
+[node name="ValueWidget" type="PanelContainer"]
+custom_minimum_size = Vector2(100, 60)
+offset_left = 1.0
+offset_right = 94.0
+offset_bottom = 69.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_5rjdb")
+preview = ExtResource("2_pfxlj")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Add" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "+"
+
+[node name="Value" type="Label" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 6
+text = "0"
+
+[node name="Subtract" type="Button" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_vertical = 4
+text = "-"
+
+[connection signal="button_down" from="HBoxContainer/Add" to="." method="_on_add_button_down"]
+[connection signal="button_down" from="HBoxContainer/Subtract" to="." method="_on_subtract_button_down"]

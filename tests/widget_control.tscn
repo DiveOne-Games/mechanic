@@ -1,0 +1,21 @@
+[gd_scene load_steps=2 format=3 uid="uid://5hb2e5rr3cjx"]
+
+[ext_resource type="Script" uid="uid://d4m0rpxit5aon" path="res://mechanic/scripts/draggable.gd" id="1_7btol"]
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+script = ExtResource("1_7btol")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_right = 84.0
+offset_bottom = 52.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+color = Color(0.343368, 0.371322, 0.13744, 1)
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect"]
+layout_mode = 0
+offset_right = 84.0
+offset_bottom = 52.0
+text = "Widget"

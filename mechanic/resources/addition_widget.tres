@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="AdditionWidgetModel" load_steps=2 format=3 uid="uid://cr6w8vjtttqos"]
+
+[ext_resource type="Script" uid="uid://chodd248qxhtm" path="res://mechanic/items/widgets/addition_widget_model.gd" id="1_od523"]
+
+[resource]
+script = ExtResource("1_od523")
+input_1 = 0
+input_2 = 0

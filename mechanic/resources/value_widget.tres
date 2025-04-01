@@ -1,0 +1,6 @@
+[gd_resource type="Resource" load_steps=2 format=3 uid="uid://bglw1lfafijir"]
+
+[ext_resource type="Script" uid="uid://gurpoerpph6m" path="res://mechanic/items/widgets/value_widget_model.gd" id="1_ewfx2"]
+
+[resource]
+script = ExtResource("1_ewfx2")

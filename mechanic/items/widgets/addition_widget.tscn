@@ -1,0 +1,61 @@
+[gd_scene load_steps=4 format=3 uid="uid://jb14nlef4sk7"]
+
+[ext_resource type="Script" uid="uid://dat6ol83mjjay" path="res://mechanic/items/widgets/addition_widget.gd" id="1_fvjts"]
+[ext_resource type="Texture2D" uid="uid://c5gtvas4r7nd0" path="res://mechanic/static/icons-set-1_0000s_0004_Layer-96.png" id="2_2p667"]
+[ext_resource type="PackedScene" uid="uid://bpavmr6ls3mdv" path="res://mechanic/items/widgets/widget_preview.tscn" id="2_c737c"]
+
+[node name="AddWidget" type="PanelContainer"]
+custom_minimum_size = Vector2(100, 60)
+offset_left = 1.0
+offset_right = 94.0
+offset_bottom = 69.0
+size_flags_horizontal = 3
+size_flags_vertical = 3
+script = ExtResource("1_fvjts")
+preview = ExtResource("2_c737c")
+
+[node name="HBoxContainer" type="HBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="VSplitContainer" type="VSplitContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="InputNode1" type="MarginContainer" parent="HBoxContainer/VSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="HBoxContainer/VSplitContainer/InputNode1"]
+position = Vector2(11, 12)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("2_2p667")
+
+[node name="InputNode2" type="MarginContainer" parent="HBoxContainer/VSplitContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+size_flags_vertical = 4
+
+[node name="Sprite2D" type="Sprite2D" parent="HBoxContainer/VSplitContainer/InputNode2"]
+position = Vector2(11, 12)
+scale = Vector2(0.125, 0.125)
+texture = ExtResource("2_2p667")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Input1" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "0"
+
+[node name="Output" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 8
+text = "0"
+
+[node name="Input2" type="Label" parent="HBoxContainer/VBoxContainer"]
+layout_mode = 2
+size_flags_horizontal = 0
+text = "0"

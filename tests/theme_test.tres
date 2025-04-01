@@ -1,0 +1,6 @@
+[gd_resource type="Theme" format=3 uid="uid://pfgfphipk1c3"]
+
+[resource]
+/colors/background = Color(1, 0.592543, 0.378563, 0.721569)
+/font_sizes/small = 16
+/fonts/foreground = null

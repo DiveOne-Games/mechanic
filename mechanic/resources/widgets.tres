@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Widget" load_steps=2 format=3 uid="uid://c7yombjuef2io"]
+
+[ext_resource type="Script" uid="uid://dvc14fabsc1rp" path="res://mechanic/items/widgets/widgets.gd" id="1_v4qyd"]
+
+[resource]
+script = ExtResource("1_v4qyd")
+input_1 = 0
+input_2 = 0
