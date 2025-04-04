@@ -9,5 +9,7 @@ func _can_drop_data(at_position: Vector2, drop_data: Variant) -> bool:
 
 func _drop_data(on_position, drop_data) -> void:
 	drop_data.position = on_position
+	drop_data.is_active = true
+	print_debug(drop_data.is_active)
 	# drop_data.reparent(self)
 	add_child(drop_data)

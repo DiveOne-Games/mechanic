@@ -18,7 +18,7 @@ func _process(_delta):
 
 
 func load_widgets() -> void:
-	var control_template = null
+	var control_template : Widget = null
 	
 	for widget_type in widgets.keys():
 		control_template = load(widgets[widget_type]).instantiate()
